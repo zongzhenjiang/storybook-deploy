@@ -1,0 +1,20 @@
+---
+import FsBackend from "i18next-fs-backend"
+import i18next from "i18next"
+
+await 
+    i18next
+        .use(FsBackend)
+        .init({
+            backend: {
+                loadPath: (lng: string, ns: string) => {
+					console.log(ns)
+                    return `./src/data/${ns}/${lng}.json`
+                }
+            }
+        })
+
+await i18next.loadNamespaces("rooms/double")
+await i18next.loadLanguages("es")
+console.log(i18next.t("hel", {ns: "rooms/double", lng: "es"}))
+---
