@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build -o ./docs"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/zongzhenjiang/storybook-deploy/issues"
   },
-  "homepage": "https://github.com/zongzhenjiang/storybook-deploy#readme",
+  "homepage": "./",
   "description": "",
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.6",
